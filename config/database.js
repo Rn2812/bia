@@ -8,7 +8,9 @@ async function isLocalConnection() {
     process.env.DB_HOST === undefined ||
     process.env.DB_HOST === "database" ||
     process.env.DB_HOST === "127.0.0.1" ||
-    process.env.DB_HOST === "localhost"
+    process.env.DB_HOST === "localhost" ||
+    process.env.DB_HOST === "172.31.15.131" ||
+    process.env.DB_SSL === "false"
   );
 }
 
